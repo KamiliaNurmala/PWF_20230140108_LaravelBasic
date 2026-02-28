@@ -70,6 +70,15 @@
         </style>
     </head>
     <body>
+        {{-- Top right navigation --}}
+        <div style="position: fixed; top: 1.5rem; right: 1.5rem; display: flex; gap: 0.75rem;">
+            <a href="{{ route('login') }}" class="btn">Login</a>
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="btn">Register</a>
+            @endif
+        </div>
+
+        {{-- Center card --}}
         <div class="card">
             <h1 class="name">Kamilia Nurmala Hayati</h1>
             <p class="nim">20230140108</p>
