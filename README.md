@@ -1,17 +1,19 @@
 ## Pertemuan 1: Laravel Basic Setup
 - Welcome Page dengan Nama, NIM, dan tombol navigasi
-- Laravel Breeze (Login & Register)
 
 ### Screenshot UI
 ![Welcome Page](public/images/Welcome-Page.png)
-![Login](public/images/Login.png)
-![Register](public/images/Register.png)
-![About Page](public/images/About.png)
 
 ## Pertemuan 2: Breeze & Routing
 - Route `/about` dengan Controller
 - Navigation link di Dashboard
 - Biodata: Nama, NIM, Program Studi, Hobi
+- Laravel Breeze (Login & Register)
+
+### Screenshot UI
+![Login](public/images/Login.png)
+![Register](public/images/Register.png)
+![About Page](public/images/About.png)
 
 ## Pertemuan 3: ERD, Model & Migration Database
 
