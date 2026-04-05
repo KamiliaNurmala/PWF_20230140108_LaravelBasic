@@ -18,6 +18,11 @@
                     <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('About') }}
                     </x-responsive-nav-link>
+                    @can('manage-product')
+                        <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.*')">
+                            {{ __('Product') }}
+                        </x-responsive-nav-link>
+                    @endcan
                 </div>
             </div>
 
@@ -73,6 +78,11 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            @can('manage-product')
+                <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.*')">
+                    {{ __('Product') }}
+                </x-responsive-nav-link>
+            @endcan
         </div>
 
         <!-- Responsive Settings Options -->

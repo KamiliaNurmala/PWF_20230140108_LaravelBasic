@@ -37,6 +37,27 @@
 ![Categories Table](public/images/categories_db.png)
 ![Users Table](public/images/users_db.png)
 
+## Pertemuan 4: CRUD, dan validasi input
+
+## Pertemuan 5: Otorisasi (Authorization) - Role, Gate, dan Policy
+
+#### Regular user tidak melihat menu Product di navigasi
+![Regular user navbar](public/images/user-no-product-nav.png)
+
+#### Admin melihat menu Product di navigasi (dapat melihat tombol Delete untuk semua produk)
+![Admin navbar](public/images/admin-product-nav.png)
+
+#### Policy: Tombol Edit & Delete hanya muncul untuk produk milik sendiri (regular user)
+![User own product buttons](public/images/user-own-product-buttons.png)
+
+### Database sqlite sebelum diubah role
+![Database sqlite](public/images/database-sqlite.png)
+
+#### Change role user menjadi admin dan Database sqlite
+![Admin all product buttons](public/images/change-role.png)
+
+#### Policy: Regular user mendapat 403 saat coba edit produk milik orang lain
+![User edit forbidden](public/images/user-edit-forbidden.png)
 ---
 
 **Nama:** Kamilia Nurmala Hayati  
