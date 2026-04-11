@@ -60,6 +60,24 @@
 
 #### Policy: Regular user mendapat 403 saat coba edit produk milik orang lain
 ![User edit forbidden](public/images/user-edit-forbidden.png)
+
+## Pertemuan 6: Laravel Validation
+Validasi dengan custom error message pada method `store()` dan `update()`.
+
+### 1. Validasi field nama produk kosong
+![empty name field](public/images/emptynamefield.png)
+
+### 2. Validasi quantity dengan nilai desimal (harus integer)
+![decimal in quantity](public/images/decimalinquantity.png)
+
+### 3. Validasi field harga kosong
+![empty price](public/images/emptyprice.png)
+
+### 4. Success message setelah produk berhasil dibuat/diupdate
+![success](public/images/successproduct.png)
+
+### 5. Error handling saat terjadi kesalahan database
+![error message](public/images/whendatabaseerror.png)
 ---
 
 **Nama:** Kamilia Nurmala Hayati  
