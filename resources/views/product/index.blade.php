@@ -144,8 +144,20 @@
                             </tbody>
                         </table>
                     </div>
-
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 tracking-tight">
+                                Product List
+                            </h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                Manage your product inventory
+                            </p>
+                        </div>
+                        @can('manage-products')
+                            <x-add-product :url="route('product.create')" :name="'Product'" />
+                        @endcan
                     </div>
+                </div>
             </div>
         </div>
     </div>

@@ -78,6 +78,41 @@ Validasi dengan custom error message pada method `store()` dan `update()`.
 
 ### 5. Error handling saat terjadi kesalahan database
 ![error message](public/images/whendatabaseerror.png)
+
+## Pertemuan 7: Laravel View Components
+Membuat reusable components untuk tombol-tombol di aplikasi agar kode lebih bersih dan maintainable.
+### Components yang Dibuat
+#### 1. AddProduct Component
+Component untuk tombol "Add Product" dengan parameter `url` dan `name`.
+- File: `app/View/Components/AddProduct.php`
+- View: `resources/views/components/add-product.blade.php`
+#### 2. EditButton Component
+Component untuk tombol Edit di halaman Product Detail dengan parameter `url`.
+- File: `app/View/Components/EditButton.php`
+- View: `resources/views/components/edit-button.blade.php`
+#### 3. DeleteButton Component
+Component untuk tombol Delete dengan form POST method (simulasi DELETE) dan confirm dialog.
+- File: `app/View/Components/DeleteButton.php`
+- View: `resources/views/components/delete-button.blade.php`
+### Penerapan Component di View
+#### Pada index.blade.php (AddProduct):
+```blade
+@can('manage-product')
+    <x-add-product :url="route('product.create')" :name="'Product'" />
+@endcan
+```
+
+### Pada view.blade.php (Edit & Delete):
+```blade
+<div class="flex items-center gap-2">
+    @can('update', $product)
+        <x-edit-button :url="route('product.edit', $product)" />
+    @endcan
+    @can('delete', $product)
+        <x-delete-button :url="route('product.delete', $product->id)" />
+    @endcan
+</div>
+```
 ---
 
 **Nama:** Kamilia Nurmala Hayati  
