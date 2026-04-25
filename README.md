@@ -84,6 +84,7 @@ Membuat reusable components untuk tombol-tombol di aplikasi agar kode lebih bers
 ### Components yang Dibuat
 #### 1. AddProduct Component
 Component untuk tombol "Add Product" dengan parameter `url` dan `name`.
+Component untuk tombol "Add Product" dengan parameter `url` dan `name`.
 - File: `app/View/Components/AddProduct.php`
 - View: `resources/views/components/add-product.blade.php`
 #### 2. EditButton Component
@@ -113,6 +114,9 @@ Component untuk tombol Delete dengan form POST method (simulasi DELETE) dan conf
     @endcan
 </div>
 ```
+
+### Hasil Tampilan Product Detail
+![product detail view](public/images/product_detail.png)
 ---
 
 **Nama:** Kamilia Nurmala Hayati  
